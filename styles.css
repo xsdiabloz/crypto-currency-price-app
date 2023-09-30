@@ -11,7 +11,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: rgb(0, 232, 255);
+    background: linear-gradient(90deg, rgba(0, 232, 255, 1) 0%, rgba(28, 61, 153, 1) 56%, rgba(8, 34, 138, 1) 100%, rgba(7, 43, 144, 1) 100%, rgba(108, 136, 136, 1) 100%, rgba(9, 9, 121, 1) 100%);
 }
 
 .coin {
@@ -24,7 +25,7 @@ body {
 }
 
 .coin .coin-logo {
-    width: 80px;
+    width: 100px;
     height: 100%;
     display: grid;
     place-items: center;
@@ -48,4 +49,53 @@ body {
     color: #fff;
     font-size: 26px;
     text-transform: uppercase;
+}
+
+.coin .coin-name span {
+    font-size: 14px;
+    color: #aaa;
+    font-weight: 500;
+    margin: 6px 0 0 2px;
+}
+
+.coin .coin-price {
+
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    padding: 8px 22px 0 0;
+    text-align: right;
+}
+
+.coin .coin-price .price {
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: -6px;
+}
+
+.coin .coin-price .change {
+
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.coin.rising {
+    background: linear-gradient(90deg, #202022, #4eb64510);
+
+}
+
+.coin.rising .coin-price .price {
+    color: #30ff20;
+}
+
+.coin.falling {
+
+    background: linear-gradient(90deg, #202022, #aa444425);
+}
+
+.coin.falling .coin-price .price {
+
+    color: #ff4040;
 }
